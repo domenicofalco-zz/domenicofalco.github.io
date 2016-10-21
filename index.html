@@ -1,11 +1,15 @@
-
 <html>
 	<head>
-		<title>Domenico Falco - Italian Web Front End Developer based in Munich</title>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+		<title>My first Three.js app</title>
+		<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
 		<style>
 			* {
 				box-sizing: border-box;
+			}
+
+			html, body {
+				margin: 0;
+				padding: 0;
 			}
 
 			body {
@@ -16,21 +20,34 @@
 				overflow: hidden;
 	    }
 
-	    h1 {
-font-family: 'Ubuntu Condensed', sans-serif;
-	      color: #ffffff;
-	      font-size: 28px;
-	      font-weight: normal;
-	      display: table-cell;
+			hgroup {
+				font-family: 'Ropa Sans', sans-serif;
+				color: #999;
+				display: table-cell;
 	      text-align: center;
 	      vertical-align: middle;
 				position: relative;
 				z-index: 3;
+				line-height: 10px;
+			}
+
+			hgroup * {
+				font-weight: normal;
+			}
+
+			h1 {
+	      font-size: 31px;
 	    }
 
-			html, body {
-				margin: 0;
-				padding: 0;
+			h2 {
+	      font-size: 16px;
+				letter-spacing: 1px;
+	    }
+
+			h3 {
+				font-size: 14px;
+				letter-spacing: 1px;
+				color: #666;
 			}
 
 			canvas {
@@ -42,24 +59,17 @@ font-family: 'Ubuntu Condensed', sans-serif;
 				z-index: 1;
 			}
 
-			.shape {
-				background-color: #000D04;
-		    width: 100%;
-		    height: 153%;
-		    position: absolute;
-		    left: -50%;
-		    top: -50%;
-		    z-index: 2;
-		    box-shadow: 0px 0px 20px rgba(120,120,120,0.5);
-		    transform: rotate(16deg);
-			}
 		</style>
 	</head>
 	<body>
 
-		<canvas class='connecting-dots'></canvas>
-		<h1>Domenico Falco - Web Front End Developer</h1>
-		<!-- <span class="shape"></span> -->
+		<canvas></canvas>
+
+		<hgroup>
+			<h1>Domenico Falco</h1>
+			<h2>Web Front End Developer</h2>
+			<h3>[ coming soon ]</h3>
+		</hgroup>
 
 		<script src="app.js"></script>
 	</body>
